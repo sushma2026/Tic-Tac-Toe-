@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            TikTacToe Game
+        </title>
+        <style>
+            *{
+                color: rgb(5, 245, 253);
+            }
+            input {
+                width: 100;
+                height: 50;
+                color: yellow;
+                
+            }
+            div{
+                text-align: center;
+            }
+            table{
+                padding-top: 50;
+                
+            }
+            #background-video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+}
+        </style>
+        
+    </head>
+    <body>
+        <video id="background-video" autoplay loop muted poster="Pexels Videos 1722969.mp4">
+            <source src="Pexels Videos 1722969.mp4" type="video/mp4">
+            </video>
+         <div>
+           <form >
+                <caption><h1>Welcome to the world of tic tac toe</h1> <br> <b>Player one will start with "x" 
+                    and Player two will have "0"</b>
+                </caption>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <input id="s"  type="text" onclick="f1();log()" >
+                            <input id="s1" type="text" onclick="f2();log()">
+                            <input id="s2" type="text" onclick="f3();log()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="s3"  type="text" onclick="f4();log()" >
+                            <input id="s4"  type="text" onclick="f5();log()" >
+                            <input id="s5"  type="text" onclick="f6();log()" >
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="s6"  type="text" onclick="f7();log()" >
+                            <input id="s7"  type="text" onclick="f8();log()" >
+                            <input id="s8"  type="text" onclick="f9();log()" >
+                        </td>
+                    </tr>
+                </table>
+               
+            
+         </div>
+        <script type="text/javascript" src="ttt.js"></script>
+        </form>
+    </body>
+</html>
